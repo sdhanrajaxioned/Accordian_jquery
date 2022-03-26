@@ -105,29 +105,59 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
-  width: 86%; 
+  width: 98%; 
   margin: 0 auto;
 }
-/*=================================
-  Header styling starts here
-=================================*/
-
-
-
-
-
-
-/*=================================
-  Header styling ends here
-=================================*/  
-
 /*=================================
   main styling starts here
 =================================*/
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
+.accoridian-title {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #EEE;
+}
 
+.icon { 
+  position: relative;
+  align-self: center;
+}
 
+.plus-minus { 
+  width: 10px;
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  background-color: #000;
+  text-indent: -9999px;
+  transition: all .3s ease-in;
+  transform: translateX(-200%);
+}
+
+.accoridian-title h3 { 
+  padding-left: 10px;
+  align-self: center;
+}
+
+.accoridian-title.active { background-color: #CCC;}
+
+.accordian-desc p{
+  padding: 10px;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* .icon span:last-of-type { transform: rotate(90deg); } */
 
 
 
@@ -136,19 +166,6 @@ li {
   main styling ends here
 =================================*/
 
-/*=================================
-  footer styling starts here
-=================================*/ 
-
-
-
-
-
-
-
- /*=================================
-  footer styling ends here
-=================================*/ 
 
 /*media query starts*/
 /*media query for 995px starts here*/
