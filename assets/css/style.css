@@ -128,6 +128,8 @@ body {
   background-color: #EEE;
 }
 
+.accoridian-title.active { background-color: #CCC;}
+
 .icon { 
   position: relative;
   align-self: center;
@@ -144,24 +146,24 @@ body {
   transform: translateX(-200%);
 }
 
+.icon span:last-of-type { transform: translateX(-200%) rotate(90deg); }
+.icon.active span:last-of-type {transform: translateX(-200%);}
+
 .accoridian-title h3 { 
   padding-left: 10px;
   align-self: center;
 }
 
-.accoridian-title.active { background-color: #CCC;}
+.accordian-desc {
+  border: 1px solid #CCC;
+  border-radius: 2px;
+}
 
 .accordian-desc p{
   padding: 10px;
   font-size: 14px;
   text-align: left;
 }
-
-/* .icon span:last-of-type { transform: rotate(90deg); } */
-
-
-
-
 /*=================================
   main styling ends here
 =================================*/
