@@ -105,64 +105,58 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1350px;
-  width: 98%; 
+  width: 96%; 
   margin: 0 auto;
 }
 /*=================================
   main styling starts here
 =================================*/
-
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+#accordian {
+width: 80%;
+max-width: 900px;
+margin: 50px auto;
 }
 
-.accoridian-title {
-  height: 60px;
-  display: flex;
-  justify-content: space-between;
+.accordian-item{ display: block;}
+
+.accordian-title {
+  padding: 15px 20px;
+  display: block;
   background-color: #EEE;
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color .2s linear;
 }
 
-.accoridian-title.active { background-color: #CCC;}
-
-.icon { 
-  position: relative;
-  align-self: center;
+.accordian-title::after{
+  content: '\2b';
+  font-family: "fontAwesome";
+  font-size: 20px;
+  float: right;
 }
 
-.plus-minus { 
-  width: 10px;
-  height: 3px;
-  display: inline-block;
-  position: absolute;
-  background-color: #000;
-  text-indent: -9999px;
-  transition: all .3s ease-in;
-  transform: translateX(-200%);
+.accordian-item.active .accordian-title::after{ 
+  content: "\f068";
+  font-family: "fontAwesome";
+  font-size: 20px;
+  float: right;
 }
 
-.icon span:last-of-type { transform: translateX(-200%) rotate(90deg); }
-.icon.active span:last-of-type {transform: translateX(-200%);}
 
-.accoridian-title h3 { 
-  padding-left: 10px;
-  align-self: center;
-}
+.accordian-item.active .accordian-title { background-color: #CCC; }
 
 .accordian-desc {
   border: 1px solid #CCC;
   border-radius: 2px;
 }
 
-.accordian-desc p{
-  padding: 10px;
-  font-size: 14px;
-  text-align: left;
+.panel {
+  padding: 0 20px;
+  border-left: 1px solid #EEE;
+  border-right: 1px solid #EEE;
+  height: 0;
+  overflow: hidden;
 }
 /*=================================
   main styling ends here
