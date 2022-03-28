@@ -155,9 +155,10 @@ margin: 50px auto;
   padding: 0 20px;
   border-left: 1px solid #EEE;
   border-right: 1px solid #EEE;
-  height: 0;
-  overflow: hidden;
+  display: none;
 }
+
+.panel.active { display: block;}
 /*=================================
   main styling ends here
 =================================*/
